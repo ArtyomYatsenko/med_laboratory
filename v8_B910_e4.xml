@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_ads date="2022-11-20T04:06:39">
+	<Ad>
+		<Title>100729420 rev.B</Title>
+		<Description/>
+		<Price>1 210</Price>
+		<OldPrice>900</OldPrice>
+		<Currency>RUB</Currency>
+		<Measure>шт</Measure>
+		<Available/>
+		<AvailableUnlimitedly/>
+		<Images>
+			<Image url="здесь будет юрл"/>
+		</Images>
+		<Video/>
+		<Address/>
+		<City/>
+		<PublicationPeriod/>
+		<Id>0eb55613-3c06-11e9-bb98-00155d035b01</Id>
+		<Param IsVip="0"/>
+		<Param Renual="1"/>
+	</Ad>
+</yml_ads>

@@ -1,0 +1,80 @@
+body {
+  /*--------------------------------*/
+  /*-----------Информер-------------*/
+  /*--------------------------------*/ }
+  body .field-required-mark {
+    font-size: 15px;
+    font-style: normal;
+    color: #f00 !important; }
+    body .field-required-mark:before, body .field-required-mark:after {
+      display: none !important; }
+  body .g-form-control-checkbox--single {
+    font-weight: normal;
+    display: flex;
+    align-items: flex-start; }
+    body .g-form-control-checkbox--single .g-form-control-checkbox__input {
+      order: 1;
+      margin-right: 5px;
+      min-width: 15px; }
+    body .g-form-control-checkbox--single .g-form-field__title {
+      order: 2;
+      margin: 0;
+      font-weight: normal;
+      font-size: 16px; }
+      @media (max-width: 480px) {
+  body .g-form-control-checkbox--single .g-form-field__title {
+    font-size: 15px; } }
+      body .g-form-control-checkbox--single .g-form-field__title a {
+        font-size: 16px; }
+  body .local-agreement-text {
+    font-size: 16px; }
+    @media (max-width: 480px) {
+  body .local-agreement-text {
+    font-size: 15px; } }
+  @media (max-width: 640px) {
+    body .g-auth__sideleft {
+      margin-right: 0; } }
+  body .gr-form-wrap2 .gr-form .gr-title {
+    display: block; }
+  body .cookies-warning {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fff;
+    color: #808080;
+    font-size: 13px;
+    z-index: 600;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 0px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.23);
+    font-weight: normal;
+    display: none; }
+    body .cookies-warning a {
+      color: inherit; }
+    body .cookies-warning.opened {
+      display: block; }
+    body .cookies-warning__body {
+      line-height: 1.2;
+      text-align: center; }
+    body .cookies-warning__close {
+      cursor: pointer;
+      padding: 12px 30px;
+      margin-top: 5px;
+      font-weight: normal;
+      font-size: 13px;
+      display: inline-block;
+      color: white;
+      background-color: #b5503b;
+      border-radius: 25px;
+      box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.149), 0px 8px 20px rgba(0, 0, 0, 0.2); }
+    body .cookies-warning__close:hover {
+      box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.149), 0 0 0 transparent; }
+  body .s3_form_field_content label {
+    align-items: flex-start !important; }
+  body .content-80 a {
+    text-decoration: underline;
+    font-weight: normal; }

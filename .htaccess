@@ -1,0 +1,17 @@
+RewriteCond %{HTTP:X-HTTPS} 1 [NC]
+
+RewriteCond %{REQUEST_URI} ^/export$
+
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+php_value session.gc_maxlifetime 43200
+php_value session.cookie_lifetime 43200
+
+
+
+
+
+
+
+
+

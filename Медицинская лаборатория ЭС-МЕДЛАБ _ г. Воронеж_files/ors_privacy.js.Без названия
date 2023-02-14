@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', function(){
+	const	modalClosed = localStorage.getItem('modalClosed'),
+			cookiesBlock = document.querySelector('.cookies-block-js'),
+			closeBtn = cookiesBlock.querySelector('.cookies-close-js');
+	
+	if (modalClosed != 1) {
+		cookiesBlock.classList.add('opened')
+	}
+	
+	closeBtn.addEventListener('click', function(){
+		localStorage.setItem('modalClosed', 1),
+		cookiesBlock.classList.remove('opened')
+	})
+});
