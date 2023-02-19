@@ -10,7 +10,7 @@ if(isset($_POST['demand'])){
 }elseif(isset($_POST['row_issl'])){
     $poisk = $_POST['poisk'];
     if($_POST['row_issl'] == "Все"){      
-        $mass_issl = selectAllIssl('issl');                 
+        $mass_issl = selectAllIssl('issl', $poisk);                 
     }else{
         $id_vid_issl = selectIdVidIssl('vid_issl', $_POST['row_issl']);
         

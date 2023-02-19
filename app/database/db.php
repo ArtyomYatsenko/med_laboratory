@@ -51,33 +51,24 @@ function selectAll($table, $params = []){
     fclose($f); 
     return $query->fetchAll();
 }
-function selectAllIssl($table, $params = []){
+function selectAllIssl($table, $params){
     global $pdo;
     
-    $sql = "SELECT * FROM $table ORDER BY name";
+    $sql = "SELECT * FROM $table";
     if(!empty($params)){
-        $i = 0;
-        foreach($params as $key => $value){
-            if(!is_numeric($value)){
-                $value = "'" . $value ."'";
-            }
-            if($i === 0){
-                $sql = $sql . " WHERE $key = $value";
-            }else{
-                $sql = $sql . " AND $key = $value";
-            }
-         $i++;
-        }
+
+
+        $sql = $sql . " WHERE name LIKE '%$params%'";
         
     }
+    $sql = $sql . " ORDER BY name";
     $query = $pdo->prepare($sql);
     $query->execute();
     dbCheckError($query);
    
-    $f = fopen("textfile.txt", "w");
-    fwrite($f, $sql);
-    fclose($f); 
+
     return $query->fetchAll();
+    // return $sql;
 }
 
 function selectAllData($table, $data, $data1, $сounterparty){
